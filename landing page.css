@@ -1,0 +1,279 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #202b36;
+}
+
+.container{
+    height: 85vh;
+    width: 80vw;
+    background: #0c1116;
+    box-shadow: 5px 10px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction:column ;
+    position: relative;
+    overflow: hidden;
+}
+.header{
+    flex-basis: 10%;
+    /* background: lightcoral; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 30px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.search-box{
+    margin-right: 40px;
+    display: flex;
+    background: black;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.search-icon{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    /* background: orange; */
+    font-size: 14px;
+}
+
+.search-input{
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    letter-spacing: 1px;
+    width: 0px;
+    transition: 0.3s;
+}
+
+.content{
+    flex-basis:80%;
+    /* background: lightgreen; */
+    margin-left: 40px;
+    display: flex;
+}
+
+.content-text{
+    flex-basis: 70%;
+    /* background: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content-text h1:nth-child(1){
+    font-size: 45px;
+    color: white;
+}
+
+.content-text h1:nth-child(2){
+    font-size: 100px;
+    line-height: 80px;
+    margin-left: 10px;
+    color: white;
+}
+
+.content-text span{
+    color: #fc5503;
+}
+.content-text p{
+    font-size: 11px;
+    font-weight: bold;
+    margin-left: 130px;
+    margin-top: 15px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.aside{
+    flex-basis: 30%;
+    /* background: violet; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aside ul{
+    background: black;
+    position: relative;
+    transform: translateX(80px);
+    transition: 0.3s ease;
+}
+
+.aside ul li{
+    list-style: none;
+    padding: 20px 10px;
+}
+
+.aside ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+}
+
+.aside ul li a i{
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.move{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -25px;
+}
+
+.footer{
+    flex-basis: 10%;
+    /* background: lightgreen; */
+    text-align: right;
+}
+
+.footer button{
+    padding: 5px 10px;
+    background: transparent;
+    color: white;
+    border: 1px solid #fc5503;
+    border-radius: 2px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    outline: none;
+    transition: 0.3s;
+    margin-right: 40px;
+}
+
+.footer button:hover{
+    background: black;
+    letter-spacing: 5px;
+}
+
+.model{
+    height: 240px;
+    transition: 0.5s;
+}
+
+.model-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.circle{
+    height: 250px;
+    width: 250px;
+    border: 2px solid #fc5503;
+    border-radius: 50%;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.model:hover{
+    transform: scale(1.1) translateX(30px);
+}
+
+.effect div{
+    position: absolute;
+    height: 0%;
+    width: 0%;
+    background: black;
+    z-index: 50;
+    transition: 0.5s;
+}
+
+.box1{
+    top: 0px;
+    left: 0px;
+}
+
+.box2{
+    top: 0px;
+    right: 0px;
+    text-align: right;
+}
+
+
+.box3{
+    bottom: 0px;
+    left: 0px;
+}
+
+
+.box4{
+    bottom: 0px;
+    right: 0px;
+}
+
+.cross{
+    color: white;
+    font-size: 30px;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.social{
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 200;
+    visibility: hidden;
+
+}
+
+.social ul li{
+    list-style: none;
+    margin: 40px 0px;
+}
+
+.social li a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.social li a:hover{
+    text-decoration: underline;
+}
+
+/* add class on js click event */
+
+.input-js{
+    width: 170px !important;
+}
+
+.aside-js{
+    transform: translateX(0px) !important;
+}
+
+.social-js{
+    visibility: visible;
+    /* transform: 0.5s; */
+    transition-delay: 0.5s;
+}
